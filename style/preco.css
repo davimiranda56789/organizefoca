@@ -1,0 +1,126 @@
+/* --- Grid de Planos --- */
+.pricing-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 10px;
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 30px;
+    align-items: center;
+}
+
+.price-card {
+    background-color: #0A0A0A;
+    border: 1px solid #1A1A1A;
+    padding: 50px 40px;
+    border-radius: 25px;
+    text-align: center;
+    position: relative;
+}
+
+/* Destaque do Plano Pro baseado no botão redondo principal */
+.price-card.featured {
+    border: 2px solid #ffffff;
+}
+
+.badge {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 4px 14px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.price-card h3 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.price-value {
+    font-size: 3.2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    letter-spacing: -1px;
+}
+
+.price-value span {
+    font-size: 1rem;
+    color: #a0a0a0;
+    font-weight: 300;
+}
+
+.price-card p {
+    color: #a0a0a0;
+    margin-bottom: 35px;
+    font-weight: 300;
+    font-size: 0.95rem;
+}
+
+/* Lista de Vantagens */
+.price-features {
+    list-style: none;
+    text-align: left;
+    margin-bottom: 40px;
+    display: inline-block;
+}
+
+.price-features li {
+    margin-bottom: 14px;
+    color: #e0e0e0;
+    font-size: 0.95rem;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.price-features li::before {
+    content: "✓";
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* Botões dos Planos */
+.btn-plan-outline {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-plan-outline:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.btn-plan-filled {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    background-color: #ffffff;
+    color: #000000;
+    transition: opacity 0.3s;
+}
+
+.btn-plan-filled:hover {
+    opacity: 0.9;
+}

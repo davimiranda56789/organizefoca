@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | Organize Mais</title>
+    <!-- Vincula seu CSS global e o CSS individual de contato -->
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/contato.css">
+</head>
+<body>
+
+    <!-- Header integrado com as classes exatas do seu style.css global -->
+    <header class="navbar">
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../image/Logo.png" alt="Organize Logo">
+            </a>
+        </div>
+        <nav class="nav-links">
+            <a href="./recursos.html">Recursos</a>
+            <a href="./precos.html">Preços</a>
+            <a href="./como-funciona.html">Como funciona</a>
+        </nav>
+        <div class="nav-btn">
+            <a href="./contato.html" class="btn-contact" style="opacity: 0.5; pointer-events: none;">Contato</a>
+        </div>
+    </header>
+
+    <!-- Estrutura principal utilizando suas classes padronizadas -->
+    <main class="contact-section">
+        <h1 class="main-title">Fale conosco.</h1>
+        <p class="main-text">
+            Tem alguma dúvida, sugestão ou precisa de suporte? Preencha os campos abaixo 
+            e nossa equipe responderá o mais rápido possível.
+        </p>
+
+        <form class="contact-form" action="#" method="POST">
+            <div class="form-group">
+                <label for="name">Nome completo</label>
+                <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Mensagem</label>
+                <textarea id="message" name="message" rows="5" placeholder="Como podemos ajudar você?" required></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">Enviar mensagem</button>
+        </form>
+
+        <footer class="footer">
+            <p>&copy; 2026 Organize Mais. Todos os direitos reservados.</p>
+        </footer>
+    </main>
+
+</body>
+</html>

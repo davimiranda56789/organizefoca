@@ -1,0 +1,160 @@
+/* --- Reset Geral --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* --- Navbar (Desktop) --- */
+.navbar {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+}
+
+.logo img {
+    height: 100px;
+    width: 5;
+    border-radius: 50%;
+
+}
+
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: #a0a0a0;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffffff;
+}
+
+.btn-contact {
+    background-color: #ffffff;
+    color: #000000;
+    text-decoration: none;
+    padding: 10px 24px;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: opacity 0.3s;
+}
+
+.btn-contact:hover {
+    opacity: 0.9;
+}
+
+/* --- Hero Section --- */
+.hero-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 750px;
+    padding: 40px 20px;
+}
+
+.main-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+    letter-spacing: -1px;
+}
+
+.main-text {
+    color: #e0e0e0;
+    font-size: 1.15rem;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    font-weight: 300;
+}
+
+.btn-start {
+    background-color: #ffffff;
+    color: #000000;
+    text-decoration: none;
+    padding: 14px 36px;
+    border-radius: 25px;
+    font-weight: 500;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+    transition: transform 0.2s, opacity 0.3s;
+}
+
+.btn-start:hover {
+    transform: scale(1.02);
+    opacity: 0.95;
+}
+
+/* --- Responsividade: Tablets (Média de 768px) --- */
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 2.8rem;
+    }
+
+    .nav-links {
+        gap: 20px;
+    }
+}
+
+/* --- Responsividade: Celulares (Média de 480px) --- */
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .nav-btn {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .btn-contact {
+        width: 80%;
+        text-align: center;
+    }
+
+    .hero-section {
+        justify-content: flex-start;
+        padding-top: 60px;
+    }
+
+    .main-title {
+        font-size: 2.2rem;
+    }
+
+    .main-text {
+        font-size: 1rem;
+    }
+}

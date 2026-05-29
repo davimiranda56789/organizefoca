@@ -1,0 +1,116 @@
+/* ==========================================
+   SEÇÃO DE CONTATO (EXCLUSIVO)
+   ========================================== */
+.contact-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    padding: 40px 20px;
+    margin: 0 auto; /* Mantém a seção perfeitamente centralizada */
+}
+
+/* O título e o texto herdam as fontes do style.css principal, necessitando apenas de ajustes finos */
+.contact-section .main-title {
+    margin-bottom: 16px;
+}
+
+.contact-section .main-text {
+    margin-bottom: 40px;
+}
+
+/* --- Formulário Elegante --- */
+.contact-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    text-align: left;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-size: 0.9rem;
+    color: #ffffff;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    background-color: #0A0A0A; /* Alterado para combinar com o fundo escuro dos cards do layout */
+    border: 1px solid #1A1A1A; /* Borda idêntica ao padrão estético do seu projeto */
+    color: #ffffff;
+    padding: 14px 16px;
+    border-radius: 12px;
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #ffffff;
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1);
+}
+
+.form-group textarea {
+    resize: none;
+}
+
+/* --- Botão de Envio --- */
+.btn-submit {
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    padding: 16px;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-top: 10px;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+    transition: transform 0.2s, opacity 0.3s;
+}
+
+.btn-submit:hover {
+    transform: scale(1.01);
+    opacity: 0.95;
+}
+
+.footer {
+    margin-top: 60px;
+    text-align: center;
+    color: #555555;
+    font-size: 0.9rem;
+    width: 100%;
+}
+
+/* ==========================================
+   RESPONSIVIDADE (MOBILE)
+   ========================================== */
+@media (max-width: 480px) {
+    .contact-section {
+        justify-content: flex-start;
+        padding-top: 40px;
+    }
+
+    .contact-section .main-text {
+        margin-bottom: 30px;
+    }
+    
+    .form-group input,
+    .form-group textarea {
+        padding: 12px;
+    }
+}
